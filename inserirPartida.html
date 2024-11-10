@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Partida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Inserir Partida</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="consultarTime.html">Consulta de Times</a></li>
+                <li><a href="deletarPartida.html">Deletar Partida</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Preencha os detalhes da partida</h2>
+            <form id="form-inserir-partida">
+                <label for="time-casa">Time Casa:</label>
+                <select id="time-casa">
+                    <option value="1">Unidos da TI</option>
+                    <option value="2">Desumanos de Humanas</option>
+                    <option value="3">Exatas mas não tão exato</option>
+                    <option value="4">Juntadão da Saúde</option>
+                </select>
+
+                <label for="time-visitante">Time Visitante:</label>
+                <select id="time-visitante">
+                    <option value="1">Unidos da TI</option>
+                    <option value="2">Desumanos de Humanas</option>
+                    <option value="3">Exatas mas não tão exato</option>
+                    <option value="4">Juntadão da Saúde</option>
+                </select>
+
+                <label for="data-partida">Data da Partida:</label>
+                <input type="datetime-local" id="data-partida" required>
+
+                <label for="resultado">Resultado:</label>
+                <input type="text" id="resultado" placeholder="Ex: 2-1" required>
+
+                <label for="escanteios-casa">Escanteios Time Casa:</label>
+                <input type="number" id="escanteios-casa" value="0" required>
+
+                <label for="escanteios-visitante">Escanteios Time Visitante:</label>
+                <input type="number" id="escanteios-visitante" value="0" required>
+
+                <label for="cartoes-amarelos-casa">Cartões Amarelos Time Casa:</label>
+                <input type="number" id="cartoes-amarelos-casa" value="0" required>
+
+                <label for="cartoes-amarelos-visitante">Cartões Amarelos Time Visitante:</label>
+                <input type="number" id="cartoes-amarelos-visitante" value="0" required>
+
+                <label for="cartoes-vermelhos-casa">Cartões Vermelhos Time Casa:</label>
+                <input type="number" id="cartoes-vermelhos-casa" value="0" required>
+
+                <label for="cartoes-vermelhos-visitante">Cartões Vermelhos Time Visitante:</label>
+                <input type="number" id="cartoes-vermelhos-visitante" value="0" required>
+
+                <label for="gols-casa">Gols Time Casa:</label>
+                <input type="number" id="gols-casa" value="0" required>
+
+                <label for="gols-visitante">Gols Time Visitante:</label>
+                <input type="number" id="gols-visitante" value="0" required>
+
+                <label for="penalidade-casa">Penalidades Time Casa:</label>
+                <input type="number" id="penalidade-casa" value="0" required>
+
+                <label for="penalidade-visitante">Penalidades Time Visitante:</label>
+                <input type="number" id="penalidade-visitante" value="0" required>
+
+                <label for="jogadores-gols-casa">Jogadores Gols Time Casa:</label>
+                <input type="text" id="jogadores-gols-casa" placeholder="IDs dos jogadores separados por vírgula">
+
+                <label for="jogadores-gols-visitante">Jogadores Gols Time Visitante:</label>
+                <input type="text" id="jogadores-gols-visitante" placeholder="IDs dos jogadores separados por vírgula">
+
+                <label for="jogadores-cartoes-amarelos-casa">Jogadores Cartões Amarelos Time Casa:</label>
+                <input type="text" id="jogadores-cartoes-amarelos-casa" placeholder="IDs dos jogadores separados por vírgula">
+
+                <label for="jogadores-cartoes-amarelos-visitante">Jogadores Cartões Amarelos Time Visitante:</label>
+                <input type="text" id="jogadores-cartoes-amarelos-visitante" placeholder="IDs dos jogadores separados por vírgula">
+
+                <label for="jogadores-cartoes-vermelhos-casa">Jogadores Cartões Vermelhos Time Casa:</label>
+                <input type="text" id="jogadores-cartoes-vermelhos-casa" placeholder="IDs dos jogadores separados por vírgula">
+
+                <label for="jogadores-cartoes-vermelhos-visitante">Jogadores Cartões Vermelhos Time Visitante:</label>
+                <input type="text" id="jogadores-cartoes-vermelhos-visitante" placeholder="IDs dos jogadores separados por vírgula">
+
+                <button type="submit">Inserir Partida</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
